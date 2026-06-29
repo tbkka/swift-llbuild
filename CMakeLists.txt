@@ -61,7 +61,7 @@ if(NOT SQLite3_FOUND)
 
   FetchContent_MakeAvailable(SQLite)
 
-  add_library(SQLite::SQLite3 ALIAS SQLite3)
+  add_library(SQLite3::SQLite3 ALIAS SQLite3)
   set_property(GLOBAL APPEND PROPERTY LLBuild_EXPORTS SQLite3)
 endif()
 
